@@ -1,0 +1,12 @@
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="sequential">
+   <changeBounds
+         android:duration="@integer/material_motion_duration_long_2"
+            android:interpolator="@android:interpolator/linear_out_slow_in"
+         />
+
+   <fade
+            android:duration="@integer/material_motion_duration_long_2"
+                android:interpolator="@android:interpolator/linear_out_slow_in"
+            />
+</transitionSet>

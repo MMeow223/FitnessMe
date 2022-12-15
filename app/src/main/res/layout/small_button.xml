@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/editInfoCardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="9dp"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="@color/grey"
+    app:layout_constraintLeft_toLeftOf="@id/phoneIconImageView"
+    app:layout_constraintTop_toBottomOf="@id/phoneIconImageView">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="2dp">
+
+
+    <TextView
+            android:id="@+id/editBasicInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            ></TextView>
+
+        <ImageView
+            android:id="@+id/editBasicInfoImageView"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/goto_icon"
+            app:layout_constraintLeft_toRightOf="@id/editBasicInfoTextView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editBasicInfoTextView"
+            app:layout_constraintBottom_toBottomOf="@+id/editBasicInfoTextView"
+            android:layout_marginLeft="5dp"
+            app:tint="@color/text_grey"
+            >
+
+        </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

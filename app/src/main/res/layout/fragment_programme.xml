@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProgrammeFragment"
+    android:paddingBottom="@dimen/tab_layout_height"
+    >
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                >
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hots Workout Trend 🔥"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    >
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/textView1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trainer Nearby"
+                    android:textSize="20sp"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    >
+                </TextView>
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/grey"-->
+<!--                    app:cardCornerRadius="9dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView2"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/textView2"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView2">-->
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:paddingHorizontal="20dp"-->
+<!--                        android:paddingVertical="2dp"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/editBasicInfoTextView"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="See More"-->
+<!--                            android:textSize="12sp"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"></TextView>-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/editBasicInfoImageView"-->
+<!--                            android:layout_width="12dp"-->
+<!--                            android:layout_height="12dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:src="@drawable/goto_icon"-->
+<!--                            app:layout_constraintBottom_toBottomOf="@+id/editBasicInfoTextView"-->
+<!--                            app:layout_constraintLeft_toRightOf="@id/editBasicInfoTextView"-->
+<!--                            app:layout_constraintRight_toRightOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="@+id/editBasicInfoTextView"-->
+<!--                            app:tint="@color/text_grey">-->
+
+<!--                        </ImageView>-->
+
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/textView22"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginTop="48dp"-->
+                <!--            android:text="See More"-->
+                <!--            android:layout_marginLeft="20dp"-->
+                <!--            android:textSize="12sp"-->
+                <!--            app:layout_constraintBottom_toBottomOf="@+id/textView2"-->
+                <!--            app:layout_constraintLeft_toRightOf="@+id/textView2"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/recyclerView1"></TextView>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/textView2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Current Workout Programme"
+                    android:textSize="20sp"
+                    android:layout_marginTop="48dp"
+
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    >
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Previous Workout Programme"
+                    android:layout_marginTop="48dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    >
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>
